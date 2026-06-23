@@ -87,17 +87,6 @@ local function resolveIcon(name)
 	return nil
 end
 
--- Stealth: protect GUI from game detection
-local ProtectGui = protectgui or (syn and syn.protect_gui) or function() end
-local function SafeParentUI(inst, skipHidden)
-    if not skipHidden then pcall(ProtectGui, inst) end
-    local parent = (gethui and gethui())
-        or (cloneref and cloneref(MacLib.GetService("CoreGui")) or MacLib.GetService("CoreGui"))
-    inst.Parent = parent
-    if not inst.Parent then
-        pcall(function() inst.Parent = LocalPlayer:WaitForChild("PlayerGui", 5) end)
-    end
-end
 
 
 --// Functions
@@ -1206,7 +1195,7 @@ function MacLib:Window(Settings)
 	headshot.BackgroundTransparency = 1
 	headshot.BorderSizePixel = 0
 	headshot.Image = "rbxassetid://14521894478"
-    headshot.Image.Position = UDim2.new(-30, -30, 0, 0)
+    headshot.Position = UDim2.new(-30, -30, 0, 0)
     headshot.Size = UDim2.fromOffset(28, 28)
 
 	local uICorner3 = Instance.new("UICorner")
