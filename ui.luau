@@ -1191,7 +1191,6 @@ function MacLib:Window(Settings)
 
 	local headshot = Instance.new("ImageLabel")
 	headshot.BackgroundTransparency = 1
-    headshot.Parent = userInfo
 	headshot.BorderSizePixel = 0
 	headshot.Image = "rbxassetid://14521894478"
     headshot.Position = UDim2.new(0.067, -1.74, 0, 0)
