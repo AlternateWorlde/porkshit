@@ -14,8 +14,8 @@ local MacLib = {
 		BackgroundColor = Color3.fromRGB(12, 12, 12),
 		MainColor       = Color3.fromRGB(24, 24, 24),
 		AccentColor     = Color3.fromRGB(138, 79, 255),
-		OutlineColor    = Color3.fromRGB(45, 45, 45),
-		FontColor       = Color3.new(1, 1, 1),
+		OutlineColor    = Color3.fromRGB(255,134,83),
+		FontColor       = Color3.new(172, 78, 54),
 	},
 }
 
@@ -1205,7 +1205,7 @@ function MacLib:Window(Settings)
 	local headshot = Instance.new("ImageLabel")
 	headshot.BackgroundTransparency = 1
 	headshot.BorderSizePixel = 0
-	headshot.Size = UDim2.fromOffset(28, 28)
+	headshot.Size = UDim2.fromOffset(80, 80)
 	headshot.Image = "rbxassetid://14521894478"
 
 	local uICorner3 = Instance.new("UICorner")
@@ -1214,7 +1214,7 @@ function MacLib:Window(Settings)
 
 	local baseUIStroke2 = Instance.new("UIStroke")
 	baseUIStroke2.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-	baseUIStroke2.Color = Color3.fromRGB(138, 79, 255)
+	baseUIStroke2.Color = Color3.fromRGB(255,134,83)
 	baseUIStroke2.Transparency = 0.6
 	baseUIStroke2.Parent = headshot
 
@@ -1231,24 +1231,10 @@ function MacLib:Window(Settings)
 	userAndDisplayFrameUIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 	userAndDisplayFrameUIListLayout.Parent = userAndDisplayFrame
 
-	local displayName = Instance.new("TextLabel")
-	displayName.FontFace = Font.new(assets.interFont, Enum.FontWeight.SemiBold)
-	displayName.RichText = true
-	displayName.Text = "<font color=\"rgb(178,120,255)\">Pork</font> <font color=\"rgb(138,79,255)\">Hub</font>"
-	displayName.TextColor3 = Color3.fromRGB(255, 255, 255)
-	displayName.TextSize = 13
-	displayName.TextTransparency = 0.05
-	displayName.TextTruncate = Enum.TextTruncate.AtEnd
-	displayName.TextXAlignment = Enum.TextXAlignment.Left
-	displayName.BackgroundTransparency = 1
-	displayName.BorderSizePixel = 0
-	displayName.Size = UDim2.new(1, 0, 0, 16)
-	displayName.Parent = userAndDisplayFrame
-
 	local username = Instance.new("TextLabel")
 	username.FontFace = Font.new(assets.interFont)
 	username.Text = "https://discord.gg/u5PYuWXVYW"
-	username.TextColor3 = Color3.fromRGB(255, 255, 255)
+	username.TextColor3 = Color3.fromRGB(255,134,83)
 	username.TextSize = 11
 	username.TextTransparency = 0.65
 	username.TextTruncate = Enum.TextTruncate.AtEnd
