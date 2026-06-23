@@ -1207,7 +1207,7 @@ function MacLib:Window(Settings)
 	headshot.BorderSizePixel = 0
 	headshot.Size = UDim2.fromOffset(80, 80)
 	headshot.Image = "rbxassetid://14521894478"
-    headshot.Position = UDim2.fromOffset(-20, -20)
+    headshot.Position = UDim2.new(1, -6, 1, -6)
 
 	local uICorner3 = Instance.new("UICorner")
 	uICorner3.CornerRadius = UDim.new(0, 6)
