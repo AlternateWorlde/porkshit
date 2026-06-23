@@ -1193,8 +1193,8 @@ function MacLib:Window(Settings)
 	headshot.BackgroundTransparency = 1
 	headshot.BorderSizePixel = 0
 	headshot.Image = "rbxassetid://14521894478"
-    headshot.Position = UDim2.new(-0.147, -0.8, 0, 0)
-    headshot.Size = UDim2.fromOffset(80, 80)
+    headshot.Position = UDim2.new(0.067, -1.74, 0, 0)
+    headshot.Size = UDim2.fromOffset(125, 118)
 
 	local uICorner3 = Instance.new("UICorner")
 	uICorner3.CornerRadius = UDim.new(0, 6)
@@ -1212,7 +1212,7 @@ function MacLib:Window(Settings)
 	userAndDisplayFrame.BackgroundTransparency = 1
 	userAndDisplayFrame.BorderSizePixel = 0
 	userAndDisplayFrame.LayoutOrder = 1
-	userAndDisplayFrame.Size = UDim2.new(1, -38, 0, 36)
+	userAndDisplayFrame.Size = UDim2.new(0.0, -38, 0, 36)
 
 	userAndDisplayFrame.Parent = informationGroup
 
