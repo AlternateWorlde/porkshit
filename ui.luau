@@ -1204,13 +1204,13 @@ function MacLib:Window(Settings)
 	information2GroupUIPadding.PaddingBottom = UDim.new(0, 10)
 	information2GroupUIPadding.Parent = information2Group
 
-	local headshot = Instance.new("ImageLabel")
-	headshot.BackgroundTransparency = 1
-	headshot.BorderSizePixel = 0
-	headshot.Image = "rbxassetid://14521894478"
-    headshot.Position = UDim2.new(0, 0)
-    headshot.Size = UDim2.new(0.325, 1)
-    headshot.Parent = information2Group
+	local Porkc = Instance.new("ImageLabel")
+	Porkc.BackgroundTransparency = 1
+	Porkc.BorderSizePixel = 0
+	Porkc.Image = "rbxassetid://14521894478"
+    Porkc.Position = UDim2.new(0, 0)
+    Porkc.Size = UDim2.new(0.325, 1)
+    Porkc.Parent = information2Group
 
 	local uICorner3 = Instance.new("UICorner")
 	uICorner3.CornerRadius = UDim.new(0, 6)
