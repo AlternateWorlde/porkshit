@@ -950,6 +950,13 @@ function MacLib:Window(Settings)
 	stroke.Color = Color3.fromRGB(255, 255, 255)
 	stroke.Transparency = windowControlSettings.strokeTransparency
 
+    local strokep = Instance.new("UIStroke")
+	strokep.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+	strokep.Color = Color3.fromRGB(255, 134, 83)
+	strokep.Transparency = windowControlSettings.strokeTransparency
+    strokep.Parent = base
+    strokep.Thickness = 2
+
 	local exit = Instance.new("TextButton")
 	exit.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json")
 	exit.Text = ""
