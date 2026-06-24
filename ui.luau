@@ -1199,11 +1199,11 @@ function MacLib:Window(Settings)
     information2Group.Name = "PorkchopFrame"
     information2Group.Parent = sidebar
 
-    local pork = Instance.new("ImageLabel")
-    pork.Image = "rbxassetid://12946284723"
-    pork.Position = UDim2.new(0.35, 0, 0.055, 0)
-    pork.Size = UDim2.new(0.1, 0, 0.05, 0)
-    pork.Parent = sidebar
+    local john = Instance.new("ImageLabel")
+    john.Image = "rbxassetid://12946284723"
+    john.Position = UDim2.new(0.35, 0, 0.055, 0)
+    john.Size = UDim2.new(0.1, 0, 0.05, 0)
+    john.Parent = sidebar
 
     local information2GroupUIPadding = Instance.new("UIPadding")
     information2GroupUIPadding.PaddingLeft = UDim.new(0, 20)
