@@ -1222,8 +1222,6 @@ function MacLib:Window(Settings)
 	baseUIStroke2.Transparency = 0.6
 	baseUIStroke2.Parent = headshot
 
-	Porkc.Parent = information2Group
-
 	local userAndDisplayFrame = Instance.new("Frame")
 	userAndDisplayFrame.BackgroundTransparency = 1
 	userAndDisplayFrame.BorderSizePixel = 0
