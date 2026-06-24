@@ -878,9 +878,10 @@ function MacLib:Window(Settings)
 
 	local baseUIStroke = Instance.new("UIStroke")
 	baseUIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-	baseUIStroke.Color = Color3.fromRGB(255, 255, 255)
+	baseUIStroke.Color = Color3.fromRGB(255, 134, 83)
 	baseUIStroke.Transparency = 0.9
 	baseUIStroke.Parent = base
+    baseUIStroke.Thickness = 2
 
 	local sidebar = Instance.new("Frame")
 	sidebar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
