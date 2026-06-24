@@ -1076,6 +1076,7 @@ function MacLib:Window(Settings)
     john.Image = "rbxassetid://89435750376221"
     john.Position = UDim2.new(0.35, 0, 0.055, 0)
     john.Size = UDim2.new(0.1, 0, 0.45, 0)
+    john.BackgroundTransparency = 1
     john.Parent = informationHolder
 
 	-- Obsidian TitleHolder pattern: horizontal layout with optional icon on the left
