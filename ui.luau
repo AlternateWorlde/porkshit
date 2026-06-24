@@ -1072,6 +1072,12 @@ function MacLib:Window(Settings)
 	informationHolder.BorderSizePixel = 0
 	informationHolder.Size = UDim2.fromScale(1, 1)
 
+    local john = Instance.new("ImageLabel")
+    john.Image = "rbxassetid://89435750376221"
+    john.Position = UDim2.new(0.35, 0, 0.055, 0)
+    john.Size = UDim2.new(0.1, 0, 0.45, 0)
+    john.Parent = informationHolder
+
 	-- Obsidian TitleHolder pattern: horizontal layout with optional icon on the left
 	local informationHolderLayout = Instance.new("UIListLayout")
 	informationHolderLayout.FillDirection = Enum.FillDirection.Horizontal
@@ -1198,12 +1204,6 @@ function MacLib:Window(Settings)
     information2Group.Position = UDim2.new(0, 0, 0.7, 0)
     information2Group.Name = "PorkchopFrame"
     information2Group.Parent = sidebar
-
-    local john = Instance.new("ImageLabel")
-    john.Image = "rbxassetid://12946284723"
-    john.Position = UDim2.new(0.35, 0, 0.055, 0)
-    john.Size = UDim2.new(0.1, 0, 0.05, 0)
-    john.Parent = sidebar
 
     local information2GroupUIPadding = Instance.new("UIPadding")
     information2GroupUIPadding.PaddingLeft = UDim.new(0, 20)
