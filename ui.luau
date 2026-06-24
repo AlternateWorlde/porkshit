@@ -1192,7 +1192,8 @@ function MacLib:Window(Settings)
     local information2Group = Instance.new("Frame")
 	information2Group.BackgroundTransparency = 1
 	information2Group.BorderSizePixel = 0
-	information2Group.Size = UDim2.fromScale(1, 1)
+	information2Group.Size = UDim2.new(1, 1)
+    information2Group.Position = UDim2.new(0, 0.65)
     information2Group.Name = "PorkchopFrame"
     information2Group.Parent = sidebar
 
