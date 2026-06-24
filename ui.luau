@@ -1189,12 +1189,27 @@ function MacLib:Window(Settings)
 
 	local userId = LocalPlayer.UserId
 
+    local information2Group = Instance.new("Frame")
+	information2Group.BackgroundTransparency = 1
+	information2Group.BorderSizePixel = 0
+	information2Group.Size = UDim2.fromScale(1, 1)
+    information2Group.Name = "PorkchopFrame"
+    information2Group.Parent = sidebar
+
+    local information2GroupUIPadding = Instance.new("UIPadding")
+    information2GroupUIPadding.PaddingLeft = UDim.new(0, 10)
+	information2GroupUIPadding.PaddingRight = UDim.new(0, -10)
+    information2GroupUIPadding.PaddingTop = UDim.new(0.1, 0)
+	information2GroupUIPadding.PaddingBottom = UDim.new(0, 10)
+	information2GroupUIPadding.Parent = information2Group
+
 	local headshot = Instance.new("ImageLabel")
 	headshot.BackgroundTransparency = 1
 	headshot.BorderSizePixel = 0
 	headshot.Image = "rbxassetid://14521894478"
-    headshot.Position = UDim2.fromScale(0.2, -2)
-    headshot.Size = UDim2.new(0.6, 2.5)
+    headshot.Position = UDim2.new(0, 0)
+    headshot.Size = UDim2.new(0.325, 1)
+    headshot.Parent = information2Group
 
 	local uICorner3 = Instance.new("UICorner")
 	uICorner3.CornerRadius = UDim.new(0, 6)
