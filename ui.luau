@@ -1193,8 +1193,8 @@ function MacLib:Window(Settings)
 	headshot.BackgroundTransparency = 1
 	headshot.BorderSizePixel = 0
 	headshot.Image = "rbxassetid://14521894478"
-    headshot.Position = UDim2.fromOffset(0.067, 2.74, 0, 0)
-    headshot.Size = UDim2.fromOffset(125, 118)
+    headshot.Position = UDim2.fromScale(0.2, -2)
+    headshot.Size = UDim2.new(0.6, 2.5)
 
 	local uICorner3 = Instance.new("UICorner")
 	uICorner3.CornerRadius = UDim.new(0, 6)
@@ -4073,11 +4073,11 @@ function MacLib:Window(Settings)
 
                     local pork = Instance.new("ImageLabel")
                     pork.Name = "Pork"
-                    pork.Image = "rbxassetid://18821914323"
+                    pork.Image = "rbxassetid://12946284723"
                     pork.BackgroundTransparency = 1
-                    pork.Position = UDim2.new(0.5,0.5,0,0)
-                    pork.Size = UDim2.new(0.1, 0.9)
-                    pork.Parent = slide
+                    pork.Position = UDim2.new(0.35, 0.055)
+                    pork.Size = UDim2.new(0.1, 0.05)
+                    pork.Parent = sidebar
                     
 
 					local uICorner = Instance.new("UICorner")
