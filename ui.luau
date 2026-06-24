@@ -1199,6 +1199,12 @@ function MacLib:Window(Settings)
     information2Group.Name = "PorkchopFrame"
     information2Group.Parent = sidebar
 
+    local pork = Instance.new("ImageLabel")
+    pork.Image = "rbxassetid://12946284723"
+    pork.Position = UDim2.new(0.35, 0, 0.055, 0)
+    pork.Size = UDim2.new(0.1, 0, 0.05, 0)
+    pork.Parent = sidebar
+
     local information2GroupUIPadding = Instance.new("UIPadding")
     information2GroupUIPadding.PaddingLeft = UDim.new(0, 20)
 	information2GroupUIPadding.PaddingRight = UDim.new(0, -10)
@@ -4086,14 +4092,6 @@ function MacLib:Window(Settings)
 					slide.BorderSizePixel = 0
 					slide.Position = UDim2.fromScale(0, 0.5)
 					slide.Size = UDim2.new(0, 13, 1, 8)
-
-                    local pork = Instance.new("ImageLabel")
-                    pork.Name = "Pork"
-                    pork.Image = "rbxassetid://12946284723"
-                    pork.BackgroundTransparency = 1
-                    pork.Position = UDim2.new(0.35, 0, 0.055, 0)
-                    pork.Size = UDim2.new(0.1, 0, 0.05, 0)
-                    pork.Parent = sidebar
                     
 
 					local uICorner = Instance.new("UICorner")
