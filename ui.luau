@@ -1194,15 +1194,15 @@ function MacLib:Window(Settings)
     local information2Group = Instance.new("Frame")
 	information2Group.BackgroundTransparency = 1
 	information2Group.BorderSizePixel = 0
-	information2Group.Size = UDim2.new(1, 0, 0.35, 0)
-    information2Group.Position = UDim2.new(0, 0, 0.65, 0)
+	information2Group.Size = UDim2.new(1, 0, 0.3, 0)
+    information2Group.Position = UDim2.new(0, 0, 0.7, 0)
     information2Group.Name = "PorkchopFrame"
     information2Group.Parent = sidebar
 
     local information2GroupUIPadding = Instance.new("UIPadding")
-    information2GroupUIPadding.PaddingLeft = UDim.new(0, 10)
+    information2GroupUIPadding.PaddingLeft = UDim.new(0, 20)
 	information2GroupUIPadding.PaddingRight = UDim.new(0, -10)
-    information2GroupUIPadding.PaddingTop = UDim.new(0.1, 0)
+    information2GroupUIPadding.PaddingTop = UDim.new(0, 35)
 	information2GroupUIPadding.PaddingBottom = UDim.new(0, 10)
 	information2GroupUIPadding.Parent = information2Group
 
@@ -4091,8 +4091,8 @@ function MacLib:Window(Settings)
                     pork.Name = "Pork"
                     pork.Image = "rbxassetid://12946284723"
                     pork.BackgroundTransparency = 1
-                    pork.Position = UDim2.new(0.35, 0.055)
-                    pork.Size = UDim2.new(0.1, 0.05)
+                    pork.Position = UDim2.new(0.35, 0, 0.055, 0)
+                    pork.Size = UDim2.new(0.1, 0, 0.05, 0)
                     pork.Parent = sidebar
                     
 
