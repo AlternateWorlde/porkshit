@@ -1192,8 +1192,8 @@ function MacLib:Window(Settings)
     local information2Group = Instance.new("Frame")
 	information2Group.BackgroundTransparency = 1
 	information2Group.BorderSizePixel = 0
-	information2Group.Size = UDim2.new(1, 1)
-    information2Group.Position = UDim2.new(0, 0.65)
+	information2Group.Size = UDim2.new(1, 0, 0.35, 0)
+    information2Group.Position = UDim2.new(0, 0, 0.65, 0)
     information2Group.Name = "PorkchopFrame"
     information2Group.Parent = sidebar
 
@@ -1208,8 +1208,8 @@ function MacLib:Window(Settings)
 	Porkc.BackgroundTransparency = 1
 	Porkc.BorderSizePixel = 0
 	Porkc.Image = "rbxassetid://14521894478"
-    Porkc.Position = UDim2.new(0, 0)
-    Porkc.Size = UDim2.new(0.325, 1)
+    Porkc.Position = UDim2.new(0, -20, 0, 0)
+    Porkc.Size = UDim2.new(1, 0, 1, 0)
     Porkc.Parent = information2Group
 
 	local uICorner3 = Instance.new("UICorner")
