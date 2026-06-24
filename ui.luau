@@ -1078,6 +1078,7 @@ function MacLib:Window(Settings)
     john.Size = UDim2.new(0.1, 0, 0.45, 0)
     john.BackgroundTransparency = 1
     john.Parent = informationHolder
+    john.ScaleType = "Crop"
 
 	-- Obsidian TitleHolder pattern: horizontal layout with optional icon on the left
 	local informationHolderLayout = Instance.new("UIListLayout")
@@ -1174,7 +1175,6 @@ function MacLib:Window(Settings)
 	sidebarGroup.Size = UDim2.new(1, 0, 1, -91)
 
 	local userInfo = Instance.new("Frame")
-    userInfo.Name = "userInfo"
 	userInfo.AnchorPoint = Vector2.new(0, 1)
 	userInfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	userInfo.BackgroundTransparency = 1
@@ -1203,8 +1203,8 @@ function MacLib:Window(Settings)
 	information2Group.BorderSizePixel = 0
 	information2Group.Size = UDim2.new(1, 0, 0.3, 0)
     information2Group.Position = UDim2.new(0, 0, 0.7, 0)
-    information2Group.Name = "PorkchopFrame"
     information2Group.Parent = sidebar
+    information2Group.Name = "porkframe"
 
     local information2GroupUIPadding = Instance.new("UIPadding")
     information2GroupUIPadding.PaddingLeft = UDim.new(0, 20)
@@ -1220,6 +1220,7 @@ function MacLib:Window(Settings)
     Porkc.Position = UDim2.new(0, -20, 0, 0)
     Porkc.Size = UDim2.new(1, 0, 1, 0)
     Porkc.Parent = information2Group
+    Porkc.ScaleType = "Fit"
 
 	local uICorner3 = Instance.new("UICorner")
 	uICorner3.CornerRadius = UDim.new(0, 6)
